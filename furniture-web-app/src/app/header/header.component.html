@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-md navbar-light bg-success fixed-top">
+<nav class="navbar navbar-expand-md navbar-light bg-info fixed-top text-white">
   <a class="navbar-brand" routerLink="/home"><img src="assets/img/logo_company.png" alt="company logo"
-      style="max-height: 50px" /> </a>
+      style="max-height: 50px" /></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
     aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation"
     (click)="isCollapsed = !isCollapsed">
@@ -9,10 +9,10 @@
   <div class="collapse navbar-collapse" id="navbarsExampleDefault" [ngbCollapse]="isCollapsed">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" routerLinkActive="active" routerLink="/home">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" style="color:white" routerLinkActive="active" routerLink="/home">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item dropdown" routerLinkActive="active" ngbDropdown>
-        <a class="nav-link dropdown-toggle" id="dropdown01" ngbDropdownToggle>Collection</a>
+        <a class="nav-link dropdown-toggle" style="color:white" id="navbarDropdown" ngbDropdownToggle>Collection</a>
         <div class="dropdown-menu" aria-labelledby="dropdown01" ngbDropdownMenu>
           <a *ngFor="let category of categoryList" class="dropdown-item"
             [routerLink]="['/collection', category.cat_id, 'furniture']">
@@ -21,7 +21,7 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLinkActive="active" routerLink="/contactus">Contact Us</a>
+        <a class="nav-link" style="color:white" routerLinkActive="active" routerLink="/contactus">Contact Us</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
